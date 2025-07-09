@@ -10,9 +10,7 @@ pool:
   name: Default
 
 steps:
-
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'Azure subscription 1(a7d4dd70-5fdf-4e03-86ee-70cda7d2dff6)'
+    ScriptType: 'FilePath'
